@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteApp", "NoteApp\NoteApp.csproj", "{2C1508D2-A517-4690-B0B4-A0C611756837}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{61C09059-2CD7-4763-BEF5-CB743E45F88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Test", "Domain.Test\Domain.Test.csproj", "{3795B9DC-C5F3-4197-8533-F4C96CCE2CEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C1508D2-A517-4690-B0B4-A0C611756837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1508D2-A517-4690-B0B4-A0C611756837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1508D2-A517-4690-B0B4-A0C611756837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1508D2-A517-4690-B0B4-A0C611756837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61C09059-2CD7-4763-BEF5-CB743E45F88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C09059-2CD7-4763-BEF5-CB743E45F88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C09059-2CD7-4763-BEF5-CB743E45F88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C09059-2CD7-4763-BEF5-CB743E45F88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3795B9DC-C5F3-4197-8533-F4C96CCE2CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3795B9DC-C5F3-4197-8533-F4C96CCE2CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3795B9DC-C5F3-4197-8533-F4C96CCE2CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3795B9DC-C5F3-4197-8533-F4C96CCE2CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95EDDF9A-6C93-449E-9295-095BDD7BA420}
+	EndGlobalSection
+EndGlobal

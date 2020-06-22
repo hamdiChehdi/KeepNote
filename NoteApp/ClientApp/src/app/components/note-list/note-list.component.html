@@ -1,0 +1,32 @@
+<mat-grid-list cols="6" *ngIf="pageId">
+  <mat-grid-tile>
+      <button mat-icon-button (click)="addInfoNote()" class="addNotebutton">
+        <mat-icon>info</mat-icon> Info
+      </button>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+      <button mat-icon-button (click)="addIdeaNote()" class="addNotebutton">
+        <mat-icon>lightbulb_outline</mat-icon> Idea
+      </button>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+      <button mat-icon-button (click)="addTodoNote()" class="addNotebutton">
+        <mat-icon>toc</mat-icon> Todo
+      </button>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<!-- <mat-grid-list cols="3" *ngIf="pageId" gutterSize="5px">
+  <mat-grid-tile *ngFor="let note of Notes">
+    <app-note [NoteData]="note"></app-note>
+  </mat-grid-tile>
+</mat-grid-list> -->
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col" *ngFor="let note of Notes">
+    <app-note [NoteData]="note"></app-note>
+  </div>
+</div>
+

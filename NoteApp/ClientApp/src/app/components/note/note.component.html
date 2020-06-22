@@ -1,0 +1,12 @@
+<mat-card class="example-card"
+          [style.background-color]='NoteData.NoteType | notetypetocolor'>
+
+  <mat-card-content>
+    <mat-icon class="noteicon">{{NoteData.NoteType | notetypetoicon}}</mat-icon>
+    <textarea class="contentZone"></textarea>
+  </mat-card-content>
+
+  <mat-card-footer>
+    <span title='Created at: {{ NoteData.CreationDateTime | date }}'> update: {{ NoteData.LastUdpateDateTime | date }} </span>
+  </mat-card-footer>
+</mat-card>

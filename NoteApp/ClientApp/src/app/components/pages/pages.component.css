@@ -1,0 +1,15 @@
+.newPageButton {
+  outline: none;
+}
+
+.pagesIcon {
+  margin-left: 10px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+.pageWord {
+  margin-left: 12px;
+  font-size: large;
+  vertical-align: middle;
+}

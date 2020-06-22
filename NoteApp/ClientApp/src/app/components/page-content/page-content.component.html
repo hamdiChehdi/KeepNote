@@ -1,0 +1,26 @@
+<mat-grid-list cols="1"
+               *ngIf="selectedPageId"
+               gutterSize="5px"
+               class="gridPage">
+  <mat-grid-tile [colspan]="1"
+                 [rowspan]="1"
+                 style="background-color: #F3F2F1;">
+    <mat-grid-tile-header>
+      <mat-icon>notes</mat-icon> Notes
+    </mat-grid-tile-header>
+    <app-note-list class="PagePanel" [pageId]="selectedPageId">
+
+    </app-note-list>
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="1"
+                 [rowspan]="1"
+                 style="background-color:#DBE1F1;">
+    <mat-grid-tile-header>
+      <mat-icon>event_note</mat-icon> Event Notes
+    </mat-grid-tile-header>
+    <app-event-list class="PagePanel">
+
+    </app-event-list>
+  </mat-grid-tile>
+</mat-grid-list>

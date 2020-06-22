@@ -1,0 +1,19 @@
+<mat-icon class="noteicon">note</mat-icon>
+
+<input type="text"
+       class="topicInput"
+       [(ngModel)]="draftPage.Name"
+       (keydown)="handleInput($event)"
+       [disabled]="disableEdit"/>
+
+<button mat-icon-button (click)="clickEdit()" class="editButton">
+  <mat-icon>
+    {{ disableEdit ? 'edit' : 'done' }}
+  </mat-icon>
+</button>
+
+<button mat-icon-button (click)="clickDelete()">
+  <mat-icon>
+    delete
+  </mat-icon>
+</button>

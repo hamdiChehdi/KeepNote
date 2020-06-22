@@ -1,0 +1,22 @@
+.mat-card-footer {
+  font-size: 7px;
+  margin-left: 2px;
+}
+
+mat-card-content {
+  height: 85%;
+}
+
+.contentZone {
+  height: 85%;
+  width: 100%;
+}
+
+.mat-card {
+  height: 100%;
+}
+
+.noteicon {
+  font-size: 20px;
+}
+

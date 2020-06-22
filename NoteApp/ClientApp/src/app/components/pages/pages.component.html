@@ -1,0 +1,23 @@
+
+<div>
+  <mat-icon class="pagesIcon">pages</mat-icon>
+  <span class="pageWord">Pages</span>
+</div>
+
+<div *ngIf="!Pages" style="text-align: center;">
+  Loading
+</div>
+
+<mat-selection-list #selected [multiple]="false" (selectionChange)="onPageChange($event)">
+  <mat-list-option [value]="Page" *ngFor="let Page of Pages" >
+    <app-page [Page]="Page"
+               (deletePage)="deletePage($event)"
+               (PageEdited)="updatePage($event)">
+    </app-page>
+  </mat-list-option>
+</mat-selection-list>
+
+<button mat-icon-button (click)="AddPage()"
+        class="newPageButton">
+  <mat-icon>add</mat-icon> Page
+</button>
