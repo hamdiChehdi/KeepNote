@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Note } from 'src/app/models/Note';
+import { NoteService } from '../../services/note.service';
 
 @Component({
   selector: 'app-note',
@@ -8,11 +9,19 @@ import { Note } from 'src/app/models/Note';
 })
 export class NoteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private noteService: NoteService) {
+  }
 
   @Input() NoteData: Note;
 
   ngOnInit(): void {
   }
 
+  noteModelChange(event: any) {
+    this.noteService.update(this.NoteData);
+  }
+
+  handleInput(event: KeyboardEvent): void {
+    event.stopPropagation();
+  }
 }

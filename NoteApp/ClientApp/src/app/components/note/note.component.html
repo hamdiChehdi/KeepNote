@@ -3,7 +3,12 @@
 
   <mat-card-content>
     <mat-icon class="noteicon">{{NoteData.NoteType | notetypetoicon}}</mat-icon>
-    <textarea class="contentZone"></textarea>
+    <textarea class="contentZone"
+              [(ngModel)]="NoteData.Content"
+              (ngModelChange)="noteModelChange($event)"             
+              (keydown)="handleInput($event)"
+              >
+    </textarea>
   </mat-card-content>
 
   <mat-card-footer>
